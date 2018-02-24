@@ -6,12 +6,13 @@
 
 ### What is this?
 
-MaNGOSWeb is a graphical web front-end for managing a mangos based World Of Warcraft Private Server.
+  MaNGOSWeb is a graphical web front-end for managing a mangos based World Of Warcraft Private Server.
 For in depth information, visit https://github.com/paintballrefjosh/MaNGOSWebV4.
 
 #### Important Note
 
 This Docker requires an external MySql or MariaDB database.
+This guide also assumes you already have a Mangos based World Of Warcraft Private Server setup.
 
 ### MaNGOSWeb Features
 
@@ -59,19 +60,19 @@ After looking at the above tabe, set variables as required. Making sure to keep 
 Then start the docker.
 
 #### 2. MaNGOSWeb Setup: Goto http://[YOUR IP]:[NGINX PORT]
-Follow the installation instructions, steps 1 & 2 are self explanatory.
+  Follow the installation instructions, steps 1 & 2 are self explanatory.
 
 <p align="center">
   <img src="https://github.com/Malfurious/docker-examples/raw/master/docker-mangosweb/mangosweb-install-step1.PNG">
 </p>
 
-At Step 3, enter the required information as described in the above image. For <MySql realmd Username>, enter the username for an account on your SQL server with permissions for the realm database.(Usually the database is called "realmd") Then enter the applicable password for that account on the next line. Finally, for <MySql realm DB Name>, enter the name of your realm database. Then click "Install Database".
+  At Step 3, enter the required information as described in the above image. For <MySql realmd Username>, enter the username for an account on your SQL server with permissions for the realm database.(Usually the database is called "realmd") Then enter the applicable password for that account on the next line. Finally, for <MySql realm DB Name>, enter the name of your realm database. Then click "Install Database".
   
 <p align="center">
   <img src="https://github.com/Malfurious/docker-examples/raw/master/docker-mangosweb/mangosweb-install-step2.PNG">
 </p>
   
-At Step 4, enter the required information as described in the above image. There are 2 sections, 1 for the characters database information, and 1 for the world database. Follow the same steps used for the previous section, using account names and passwords that have appropriate permissions for their given databases. (The characters database is usually named "characters", and the world database is usually named "mangos" or "world" depending on the server software.)
+  At Step 4, enter the required information as described in the above image. There are 2 sections, 1 for the characters database information, and 1 for the world database. Follow the same steps used for the previous section, using account names and passwords that have appropriate permissions for their given databases. (The characters database is usually named "characters", and the world database is usually named "mangos" or "world" depending on the server software.)
 When complete, click the Submit button. The last step asks for you to create an Admin account for managing the site. It is highly recommended you use an existing account you already created on your server.
 If all goes without error, you are finished with the Installation!
 Shutdown the docker and remove the container. Then restart the docker with the same settings as before, except for setting DISABLE_INSTALL=true. Once the docker starts, going to http://[YOUR IP]:[NGINX PORT] should bring you to the homepage, where you can login near the top right with your previously provided account information. Once logged in, you can click "Admin Panel" on the left navigation bar, taking you to the pages allowing you to further configure your installation.
