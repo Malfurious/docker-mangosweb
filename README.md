@@ -3,7 +3,8 @@
 <p align="center">
   <img src="https://github.com/Malfurious/docker-examples/raw/master/docker-mangosweb/MangosWeb-Icon.PNG">
 </p>
-### What is this ?
+
+### What is this?
 
 MaNGOSWeb is a graphical web front-end for managing a mangos based World Of Warcraft Private Server.
 For in depth information, visit https://github.com/paintballrefjosh/MaNGOSWebV4.
