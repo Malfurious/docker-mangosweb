@@ -1,13 +1,15 @@
 # malfurious/docker-mangosweb
 
-![mangosweb](https://github.com/Malfurious/docker-examples/blob/master/docker-mangosweb/MangosWeb-Icon.PNG?raw=true "mangosweb")
-
+<p align="center">
+  <img src="https://github.com/Malfurious/docker-examples/raw/master/docker-mangosweb/MangosWeb-Icon.PNG">
+</p>
 ### What is this ?
 
 MaNGOSWeb is a graphical web front-end for managing a mangos based World Of Warcraft Private Server.
 For in depth information, visit https://github.com/paintballrefjosh/MaNGOSWebV4.
 
 #### Important Note
+
 This Docker requires an external MySql or MariaDB database.
 
 ### MaNGOSWeb Features
@@ -32,6 +34,7 @@ This Docker requires an external MySql or MariaDB database.
  - Much Much More!
 
 ### Ports (Configurable)
+
 MaNGOSWeb:
 - **7788**
 
@@ -63,5 +66,6 @@ At Step 4, enter the required information as described in the above image. There
 When complete, click the Submit button. The last step asks for you to create an Admin account for managing the site. It is highly recommended you use an existing account you already created on your server.
 If all goes without error, you are finished with the Installation!
 Shutdown the docker and remove the container. Then restart the docker with the same settings as before, except for setting DISABLE_INSTALL=true. Once the docker starts, going to http://[YOUR IP]:[NGINX PORT] should bring you to the homepage, where you can login near the top right with your previously provided account information. Once logged in, you can click "Admin Panel" on the left navigation bar, taking you to the pages allowing you to further configure your installation.
+
 
 #### Setup Complete!
