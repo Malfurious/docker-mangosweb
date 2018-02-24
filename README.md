@@ -60,9 +60,17 @@ Then start the docker.
 
 #### 2. MaNGOSWeb Setup: Goto http://[YOUR IP]:[NGINX PORT]
 Follow the installation instructions, steps 1 & 2 are self explanatory.
-![mangosweb1](https://github.com/Malfurious/docker-examples/blob/master/docker-mangosweb/mangosweb-install-step1.PNG?raw=true "mangosweb1")
+
+<p align="center">
+  <img src="https://github.com/Malfurious/docker-examples/raw/master/docker-mangosweb/mangosweb-install-step1.PNG">
+</p>
+
 At Step 3, enter the required information as described in the above image. For <MySql realmd Username>, enter the username for an account on your SQL server with permissions for the realm database.(Usually the database is called "realmd") Then enter the applicable password for that account on the next line. Finally, for <MySql realm DB Name>, enter the name of your realm database. Then click "Install Database".
-![mangosweb2](https://github.com/Malfurious/docker-examples/blob/master/docker-mangosweb/mangosweb-install-step2.PNG?raw=true "mangosweb2")
+  
+<p align="center">
+  <img src="https://github.com/Malfurious/docker-examples/raw/master/docker-mangosweb/mangosweb-install-step2.PNG">
+</p>
+  
 At Step 4, enter the required information as described in the above image. There are 2 sections, 1 for the characters database information, and 1 for the world database. Follow the same steps used for the previous section, using account names and passwords that have appropriate permissions for their given databases. (The characters database is usually named "characters", and the world database is usually named "mangos" or "world" depending on the server software.)
 When complete, click the Submit button. The last step asks for you to create an Admin account for managing the site. It is highly recommended you use an existing account you already created on your server.
 If all goes without error, you are finished with the Installation!
